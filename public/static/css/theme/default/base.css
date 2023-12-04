@@ -1,0 +1,817 @@
+@charset "utf-8";
+
+body {
+    background: #F5F9F9;
+    color: #1c1a1a;
+    font-size: 0.85rem;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+a:hover {
+    color: #10bf68;
+}
+
+.min-height {
+    min-height: 520px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+input::placeholder {
+    color: #eee;
+    font-size: 0.8rem;
+    opacity: 0.54;
+}
+
+.article_show_content {
+    text-align: justify;
+}
+
+.pic-color {
+    padding-left: 25px;
+}
+
+.pic-color:before {
+    content: "";
+    display: block;
+    height: 15px;
+    width: 7px;
+    position: absolute;
+    top: 11px;
+    border-radius: 10px;
+    left: 9px;
+}
+
+.pic-color-rec:before {
+    background: #ad3689;
+}
+
+.pic-color-hot:before {
+    background: #e8b856;
+}
+
+.pic-color-new:before {
+    background: #36ad9e;
+}
+
+
+.ts-nav .container a.on,
+.ts-nav .container a:hover,
+.ts-nav .container a:active {
+    border-bottom: solid 0.2rem #49a5de;
+}
+
+@media (max-width: 992px) {
+    .navbar-toggler:not(.collapsed)~div.float-end {
+        position: absolute;
+        top: 0.75rem;
+        right: 0.75rem;
+    }
+}
+
+.media {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.ts-nav {
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 0.1rem 0.3rem #ccc;
+    opacity: 0.8;
+    filter: alpha(opacity=20);
+    -moz-opacity: 0.8;
+}
+
+
+.ts-nav .container a {
+    position: relative;
+    float: left;
+    margin: 0 0.1rem 0 0.15rem;
+    padding: 0.8rem 0.8rem;
+    border-bottom: solid 0.2rem #fff;
+    color: #515151;
+}
+
+@media (max-width: 576px) {
+    body {
+        background: #f5f8fa;
+        color: #535353;
+        font-size: 0.95rem;
+    }
+
+    .ts-nav .container a {
+        margin: 0 0.1rem 0 0.1rem;
+        padding: 0.6rem 0.5rem;
+        border-bottom: solid 0.15rem #fff;
+    }
+
+    .ts-hide {
+        display: none;
+    }
+}
+
+
+.header .form-control {
+    padding: 0 0.75rem;
+}
+
+.header .header-photo {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.header .header-username {
+    color: red;
+    margin-left: 4px;
+}
+
+.header .nav-link {
+    color: #fff;
+}
+
+.footer {
+    margin-top: 0.8rem;
+    padding: 0.8rem 0 0 0;
+    width: 100%;
+    background-color: #2a2c31;
+    text-align: center;
+}
+
+.footer p {
+    margin-bottom: 0.3rem;
+}
+
+.card {
+    margin: 0.8rem 0 0 0;
+}
+
+.breadcrumb {
+    background-color: #fff;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    padding: 0.5rem 0 0.7rem 0.6rem;
+    border-radius: 0.45rem;
+}
+
+.common-content img {
+    max-width: 100% !important;
+    height: auto;
+    display: block;
+}
+
+.book-chapter-hide {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.book-chapter .category {
+    color: gray;
+    font-size: 0.90rem;
+    width: 15%;
+    float: left;
+}
+
+.book-chapter .book {
+    color: #1a1a1a;
+    font-size: 0.90rem;
+    width: 25%;
+    float: left;
+}
+
+.book-chapter .chapter {
+    color: #666;
+    font-size: 0.85rem;
+    width: 45%;
+    float: left;
+}
+
+.book-chapter .time {
+    color: #666;
+    font-size: 0.85rem;
+    width: 13%;
+    float: left;
+}
+
+
+@media screen and (max-width: 768px) {
+    .book-chapter .book {
+        display: none;
+    }
+
+    .book-chapter .time {
+        display: none;
+    }
+
+    .book-chapter .category {
+        color: gray;
+        font-size: 0.95rem;
+        width: auto;
+        display: inline;
+        float: none;
+    }
+
+    .book-chapter .chapter {
+        color: #666;
+        font-size: 0.95rem;
+        width: auto;
+        display: inline;
+        float: none;
+    }
+
+    .book-chapter li {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+    }
+}
+
+
+.rec-book-list {
+    display: flex;
+    margin-top: 10px;
+    border-bottom: 1px dashed #E3EFC5;
+}
+
+.rec-book-list .avatar {
+    width: 85px;
+    height: 135px;
+    flex-shrink: 0;
+}
+
+.rec-book-list .avatar img {
+    width: 98%;
+    max-height: 99%;
+}
+
+.rec-book-list .content {
+    padding: 0 10px;
+}
+
+.rec-book-list .content .title {
+    font-size: 1.1rem;
+    color: #666666;
+}
+
+.rec-book-list .content .info {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    color: #6c757d;
+    text-align: justify;
+}
+
+div.wenzhang-hot,
+div.wenzhang-new {
+    font-style: bold;
+}
+
+ul.wenzhang-list {
+    line-height: 1.8em;
+}
+
+ul.wenzhang-list li a {
+    display: block;
+    padding: 0.2rem;
+    height: 2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-bottom: 1px dashed #E3EFC5;
+}
+
+
+/***************列表页****************/
+.page-article-list {
+    overflow: hidden;
+    padding: 0;
+}
+
+.page-article-list .ts-mw-100 {
+    width: 100% !important;
+    max-height: 200px !important;
+}
+
+.page-article-list li {
+    padding: 15px 0;
+    border-bottom: 1px dashed #999999;
+}
+
+.page-article-list .username {
+    color: rgb(69, 231, 41);
+}
+
+.page-article-list .show-all {
+    color: #F60;
+}
+
+.page-article-list .title {
+    color: #8EC61D;
+}
+
+.page-article-list .cate {
+    color: #006b9c;
+}
+
+/***************详情页****************/
+.author {
+    display: flex;
+    margin-top: 10px;
+}
+
+.author .avatar {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+}
+
+.author .avatar img {
+    width: 100%;
+    height: 100%;
+}
+
+.author .content {
+    padding: 0 10px;
+}
+
+.author .content .title {
+    font-size: 0.85rem;
+    color: #666666;
+}
+
+.author .content .info {
+    font-size: 0.8rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #6c757d;
+}
+
+/***************章节列表****************/
+.chapter-list {
+    margin-top: 1rem;
+    padding: 0 0.5rem;
+}
+
+.chapter-list li {
+    padding: 0.3rem 0.2rem;
+    border-bottom: 1px dashed #E3EFC5;
+    font-size: 0.85rem;
+    height: 2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.chapter-list-sidebar div {
+    width: 48%;
+    flex-shrink: 0;
+    text-align: center;
+    display: inline-block;
+    margin-top: 0.4rem;
+}
+
+.chapter-list-sidebar div a.avatar {
+    width: 120px;
+    height: 150px;
+}
+
+.chapter-list-sidebar div a.title {
+    width: 98%;
+    display: inline-block;
+}
+
+.chapter-list-sidebar div img {
+    width: 90%;
+    height: 99%;
+}
+
+.chapter-list-sidebar div a {
+    display: inline-block;
+}
+
+
+
+/*树洞 右边栏列表*/
+
+.ts-weibo-list li {
+    margin: 0 0 5px;
+    padding: 0 0 8px;
+    border-bottom: 1px dashed #DDDDDD;
+}
+
+.ts-weibo-list li .portrait {
+    float: left;
+    padding-top: 3px;
+    width: 35px;
+}
+
+.ts-weibo-list li .portrait img {
+    padding: 1px;
+    width: 32px;
+    height: 32px;
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+
+.ts-weibo-list li .body {
+    overflow: hidden;
+    margin-left: 38px;
+    text-align: justify;
+}
+
+.ts-weibo-list li .log {
+    word-break: break-all;
+}
+
+.ts-weibo-list li .time {
+    display: block;
+    margin: 5px 0 0;
+    color: #9A9A9A;
+}
+
+.ts-weibo-list li .time a {
+    color: #9A9A9A;
+    text-decoration: none;
+}
+
+/*树洞发表 框架*/
+
+.ts-weibo-weiform {
+    position: relative;
+    overflow: hidden;
+    margin: 0 0 10px;
+    width: 100%;
+    height: 36px;
+    border: 1px solid #0099FF;
+    border-radius: 0px;
+    background: none repeat scroll 0 0 #0099FF;
+}
+
+.ts-weibo-weiform textarea {
+    float: left;
+    overflow: auto;
+    padding: 2px;
+    width: 80%;
+    height: 36px;
+    border: 0 none;
+    background: none repeat scroll 0 0 #FFFFFF;
+    font-size: 10pt;
+    resize: none;
+}
+
+.ts-weibo-weiform input {
+    float: right;
+    width: 20%;
+    height: 36px;
+    border: 0 none;
+    background: none repeat scroll 0 0 #0099FF;
+    color: #FFFFFF;
+    font-size: 10pt;
+    cursor: pointer;
+}
+
+/*树洞   列表*/
+
+.ts-weibo-show {
+    margin-top: 20px;
+}
+
+.ts-weibo-show .mbtl {
+    float: left;
+    margin: 0px 2px 0 0;
+    padding: 0;
+    width: 40px;
+}
+
+.ts-weibo-show .mbtl img {
+    width: 36px;
+    height: 36px;
+}
+
+.ts-weibo-show .mbtr {
+    margin: 0px 0 20px 0;
+    overflow: hidden;
+    padding: 10px 5px;
+    background: #f8f8f8;
+}
+
+.ts-weibo-show .mbtr .title {
+    margin-top: 10px;
+    padding-left: 5px;
+}
+
+.ts-weibo-show .mbtr .content {
+    line-height: 30px;
+    padding: 10px 0;
+}
+
+/*树洞   评论列表*/
+
+.ts-weibo-comment li {
+    margin: 0 0 20px 0;
+    overflow: hidden;
+    border-bottom: solid 1px #f0f0f0;
+    padding-top: 10px;
+}
+
+.ts-weibo-comment li .user-face {
+    float: left;
+    height: 48px;
+    overflow: hidden;
+    width: 48px;
+}
+
+.ts-weibo-comment li .reply-doc {
+    margin-left: 48px;
+    overflow: hidden;
+}
+
+.ts-weibo-comment li .reply-doc h4 {
+    font-weight: normal;
+    font-size: 12px;
+    padding: 5px;
+    margin: 0 0 10px 0;
+    color: #999;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+.ts-weibo-comment li .reply-doc p {
+    margin: 0;
+    overflow: hidden;
+    word-wrap: break-word;
+    line-height: 23px;
+    margin-bottom: 5px;
+}
+
+/*树洞   评论列表*/
+
+
+
+
+/**留言板功能**/
+.ts-follow {
+    position: absolute;
+    top: 22px;
+    right: 20px;
+}
+
+.ts-guest img {
+    float: left;
+    width: 50px;
+}
+
+.ts-guest form {
+    margin-left: 60px;
+}
+
+.ts-guest li {
+    border-bottom: 1px solid #EEEEEE;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.ts-glist li img {
+    float: left;
+}
+
+.ts-glist li .content {
+    margin-left: 60px;
+    line-height: 25px;
+}
+
+@media (max-width: 575.98px) .ts-follow {
+    position: absolute;
+    top: -2px;
+    right: 20px;
+}
+
+.ts-glist li .content p {
+    padding: 0px;
+    margin: 0;
+}
+
+/*树洞   评论列表*/
+/*树洞   列表*/
+
+.ts-weibo-show {
+    margin-top: 20px;
+}
+
+.ts-weibo-show .mbtl {
+    float: left;
+    margin: 0px 2px 0 0;
+    padding: 0;
+    width: 40px;
+}
+
+.ts-weibo-show .mbtl img {
+    width: 36px;
+    height: 36px;
+}
+
+.ts-weibo-show .mbtr {
+    margin: 0px 0 20px 0;
+    overflow: hidden;
+    padding: 10px 5px;
+    background: #f8f8f8;
+}
+
+.ts-weibo-show .mbtr .title {
+    margin-top: 10px;
+    padding-left: 5px;
+}
+
+.ts-weibo-show .mbtr .content {
+    line-height: 30px;
+    padding: 10px 0;
+}
+
+/*树洞   评论列表*/
+
+.ts-weibo-comment li {
+    margin: 0 0 20px 0;
+    overflow: hidden;
+    border-bottom: solid 1px #f0f0f0;
+    padding-top: 10px;
+}
+
+.ts-weibo-comment li .user-face {
+    float: left;
+    height: 48px;
+    overflow: hidden;
+    width: 48px;
+}
+
+.ts-weibo-comment li .reply-doc {
+    margin-left: 48px;
+    overflow: hidden;
+}
+
+.ts-weibo-comment li .reply-doc h4 {
+    font-weight: normal;
+    font-size: 12px;
+    padding: 5px;
+    margin: 0 0 10px 0;
+    color: #999;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+.ts-weibo-comment li .reply-doc p {
+    margin: 0;
+    overflow: hidden;
+    word-wrap: break-word;
+    line-height: 23px;
+    margin-bottom: 5px;
+}
+
+.ts-facebox {
+    overflow: hidden;
+}
+
+.ts-facebox .face {
+    float: left;
+}
+
+.ts-facebox .info {
+    margin-left: 60px;
+}
+
+.ts-facebox .info-my {
+    margin-left: 45px;
+}
+
+.ts-facebox .other {
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    border-top: solid 1px #eee;
+    list-style: none;
+}
+
+.ts-facebox .other li {
+    float: left;
+    padding: 10px 15px;
+    color: #999;
+    text-align: center;
+}
+
+/*我的搜索*/
+.ts-other-menu {
+    padding: 15px 0;
+    font-size: 1rem;
+}
+
+.ts-other-menu .s_select {
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+
+.ts-other-top {
+    padding: 5px;
+    font-size: 14px;
+    margin-top: 1rem;
+}
+
+.ts-other-top span {
+    color: red;
+}
+
+.ts-other-result {
+    padding: 10px 0 30px 0;
+    border-bottom: 1px dashed #CCCCCC;
+    position: relative;
+    width: 100%;
+}
+
+.ts-other-result .content {
+    display: table-cell;
+}
+
+.ts-other-result .info {
+    color: #999999;
+    position: absolute;
+    right: 10px;
+}
+
+/*我的站点地图*/
+.ts-other-map {
+    margin-top: 1rem;
+}
+
+.ts-other-map h2 {
+    padding-left: 10px;
+    line-height: 34px;
+    font-size: 20px;
+    color: #373;
+    font-weight: 400;
+    background-color: #abcdef;
+}
+
+.ts-other-map .title {
+    margin: 0 5px;
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 2px solid #cde09c;
+}
+
+.ts-other-map .title h3 {
+    padding-left: 5px;
+    line-height: 34px;
+    font-size: 18px;
+    border-bottom: 2px solid #ff7e00;
+    color: #373;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.ts-other-map .title h3 a {
+    color: #373;
+}
+
+.ts-other-map .nav-list div {
+    margin-bottom: 0 !important;
+}
+
+.ts-other-map .nav-list div a {
+    display: inline-block;
+    width: 98%;
+    height: 2.0rem;
+    line-height: 2.0rem;
+    text-align: center;
+    color: #666;
+    font-size: 13px;
+    background: #fff;
+    color: #858585;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+
+.ts-nav-list a {
+    display: block;
+    height: 1.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
