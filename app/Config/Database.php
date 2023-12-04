@@ -26,10 +26,10 @@ class Database extends Config
      */
     public array $default = [
         'DSN' => '',
-        'hostname' => '43.139.14.122',
+        'hostname' => '4111',
         'username' => 'root',
-        'password' => 'liao??1517',
-        'database' => 'ts_guiaihai',
+        'password' => '222',
+        'database' => '222',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
@@ -48,10 +48,10 @@ class Database extends Config
 
     public array $book = [
         'DSN' => '',
-        'hostname' => '43.139.14.122',
+        'hostname' => '4111',
         'username' => 'root',
-        'password' => 'liao??1517',
-        'database' => 'ts_guiaihai_book',
+        'password' => '222',
+        'database' => '222',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
@@ -68,10 +68,10 @@ class Database extends Config
 
     public array $meiwen = [
         'DSN' => '',
-        'hostname' => '43.139.14.122',
+        'hostname' => '4111',
         'username' => 'root',
-        'password' => 'liao??1517',
-        'database' => 'ts_guiaihai_meiwen',
+        'password' => '222',
+        'database' => '222',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
@@ -88,10 +88,10 @@ class Database extends Config
 
     public array $gushi = [
         'DSN' => '',
-        'hostname' => '43.139.14.122',
+        'hostname' => '4111',
         'username' => 'root',
-        'password' => 'liao??1517',
-        'database' => 'ts_guiaihai_gushi',
+        'password' => '222',
+        'database' => '222',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
@@ -108,10 +108,10 @@ class Database extends Config
 
     public array $zuowen = [
         'DSN' => '',
-        'hostname' => '43.139.14.122',
+        'hostname' => '4111',
         'username' => 'root',
-        'password' => 'liao??1517',
-        'database' => 'ts_guiaihai_zuowen',
+        'password' => '222',
+        'database' => '222',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
@@ -129,10 +129,10 @@ class Database extends Config
 
     public array $spider = [
         'DSN' => '',
-        'hostname' => '43.139.14.122',
+        'hostname' => '4111',
         'username' => 'root',
-        'password' => 'liao??1517',
-        'database' => 'ts_guiaihai_spider',
+        'password' => '222',
+        'database' => '222',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,

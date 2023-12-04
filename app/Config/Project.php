@@ -9,7 +9,7 @@ class Project extends BaseConfig
         'sitename' => '爱嗨',
         'contact' => '微信：huazhiyeluo',
         'weburl' => 'https://www.guiaihai.com',
-        'beian' => '赣ICP备15003370号-8',
+        'beian' => '111111',
         'version' => 202003312313,
         'theme' => 'default',
     ];
@@ -37,18 +37,18 @@ class Project extends BaseConfig
 
     public array $thirdLoginConfig = [
         'qq' => [
-            'appId' => 102010518,
-            'appKey' => 'kNp33oKbhZDdpnZ7',
+            'appId' => 1111,
+            'appKey' => '1111',
             'returnUrl' => 'https://www.guiaihai.com/loginreturn/qq.html',
         ],
         'baidu' => [
-            'appId'     => '7kKiWYLb9hSAj5aX5IojlGDi',
-            'appKey'    => '36apBl5hhzsHGPMmGFBLemGCixpEcR7G',
+            'appId'     => '11111',
+            'appKey'    => '1111',
             'returnUrl' => 'https://www.guiaihai.com/loginreturn/baidu.html',
         ],
         'weibo' => [
-            'appId'     => 4257280620,
-            'appKey'    => '87f04da3a4e3fa265b2a7b2a7093767a',
+            'appId'     => 1111,
+            'appKey'    => '1111',
             'returnUrl' => 'https://www.guiaihai.com/loginreturn/weibo.html',
         ],
     ];
@@ -58,7 +58,7 @@ class Project extends BaseConfig
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?e783fa799b57c6244e2c503a977e3abd";
+  hm.src = "https://hm.baidu.com/hm.js?11111";
   var s = document.getElementsByTagName("script")[0];
   s.parentNode.insertBefore(hm, s);
 })();
